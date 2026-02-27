@@ -55,7 +55,7 @@ const Greeting = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
-        <Title data-aos="fade-up">초대합니다</Title>
+        <Title data-aos="fade-up">저희, 결혼합니다!</Title>
       </Divider>
       <Image data-aos="fade-up" src={Flower} />
       <Content data-aos="fade-up">
