@@ -59,16 +59,12 @@ const Greeting = () => {
       </Divider>
       <Image data-aos="fade-up" src={Flower} />
       <Content data-aos="fade-up">
-        연인으로 함께 맞이한
-        <br />
-        <br />  
-        세 번의 사계절을 지나,
+        연인으로 함께 맞이한 세 번의 사계절을 지나,
         <br />
         <br /> 
-         마침내 부부의 인연을 맺어 
+         마침내 부부의 인연을 맺어 평생을 함께하고자 합니다.
         <br />
         <br />
-        평생을 함께하고자 합니다.
         <br />
         <br />
         최근, 신랑의 해외포닥 결정으로
