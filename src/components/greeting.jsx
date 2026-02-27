@@ -32,7 +32,7 @@ const Content = styled.p`
   opacity: 0.75;
   margin-bottom: 16px;
   width: 100%;
-  text-align: center;
+  text-align: left;
 `;
 
 const GroomBride = styled.p`
