@@ -95,7 +95,7 @@ const Location = () => {
   return (
     <Wrapper>
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
-        <Title>오시는 길</Title>
+        <Title>언약식 장소</Title>
       </Divider>
       <Image src={Flower} />
       <Map
@@ -106,15 +106,26 @@ const Location = () => {
         서울 중구 을지로 30 본관 38층
         <br />
         롯데호텔서울 모모야마
-        <br />
-        <br />
-        <Title>지하철 이용시</Title>
-        <br />
-        <br />
-        2호선 을지로입구역 하차 (도보 4분)
       </Content>
     </Wrapper>
   );
 };
 
 export default Location;
+
+const Layout = ({ children }) => {
+  useEffect(() => {
+    const handleContextMenu = (e) => {
+      e.preventDefault(); // 우클릭 메뉴 차단
+    };
+    
+    document.addEventListener('contextmenu', handleContextMenu);
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
+
+  return <div>{children}</div>;
+};
+
+export default Layout;
