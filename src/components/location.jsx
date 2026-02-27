@@ -98,10 +98,10 @@ const Location = () => {
         <Title>언약식 장소</Title>
       </Divider>
       <Image src={Flower} />
-      <Map
-        id="daumRoughmapContainer1770817420232"
-        className="root_daum_roughmap root_daum_roughmap_landing"
-      ></Map>
+      {/* <Map */}
+      {/*   id="daumRoughmapContainer1770817420232" */}
+      {/*   className="root_daum_roughmap root_daum_roughmap_landing" */}
+      {/* ></Map> */}
       <Content>
         서울 중구 을지로 30 본관 38층
         <br />
@@ -112,20 +112,3 @@ const Location = () => {
 };
 
 export default Location;
-
-const Layout = ({ children }) => {
-  useEffect(() => {
-    const handleContextMenu = (e) => {
-      e.preventDefault(); // 우클릭 메뉴 차단
-    };
-    
-    document.addEventListener('contextmenu', handleContextMenu);
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []);
-
-  return <div>{children}</div>;
-};
-
-export default Layout;
