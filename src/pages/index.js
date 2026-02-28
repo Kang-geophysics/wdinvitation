@@ -9,7 +9,7 @@ import Title from "../components/title";
 import "../styles/index.css";
 
 import GroovePaper from "../assets/GroovePaper.png";
-import Location from "../components/location";
+// import Location from "../components/location";
 import CongratulatoryMoney from "../components/congratulatoryMoney";
 import Share from "../components/share";
 import Quote from "../components/quote";
@@ -52,7 +52,7 @@ const IndexPage = () => {
       <Title />
       <Greeting />
       <Gallery />
-      <Location />
+      {/* <Location /> */}
       <Quote />
       <CongratulatoryMoney />
       <Share />
